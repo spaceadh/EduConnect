@@ -2,21 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { useNavigate } from 'react-router-dom';
 import 'react-pro-sidebar/dist/css/styles.css';
-import { auth } from '../../firebase'; // Adjust the path accordingly
+import { auth } from '../../firebase'; 
 import { FaSignOutAlt } from 'react-icons/fa';
 import { useUserContext } from '../../UserContext';
-import ChatWithLecturers from './ChatWithLecturers'; // Import the ChatWithLecturers component here
+import ChatWithLecturers from './ChatWithLecturers';
 import GroupChats from './groupChats';
-import Chatbot from './ChatBot';
 import DocumentViewer from './DocumentViewer';
 import StudentList from './StudentList';
 import './Sidebar.css';
 
 const Sidebar = () => {
-  const [activeTab, setActiveTab] = useState('list_students'); // Default active tab
+  const [activeTab, setActiveTab] = useState('list_students');
   const [userData, setUserData] = useState(null);
   const navigate = useNavigate();
-  const { setUser } = useUserContext(); // Assuming setUser is provided by UserContext
+  const { setUser } = useUserContext();
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -24,10 +23,8 @@ const Sidebar = () => {
         // const user = auth.currentUser;
         const lecturer = JSON.parse(localStorage.getItem('lecturer'));
         if (lecturer) {    
-          // const lecturer = JSON.parse(localStorage.getItem('lecturer'));
           setUserData(lecturer);
         } else {
-          // No user signed in, navigate to login page
           console.error('No user signed in');
           navigate('/login', { replace: true });
         }
@@ -37,12 +34,10 @@ const Sidebar = () => {
     };
 
     fetchUserData();
-
-    // Clean up function
     return () => {
       // Cleanup code if needed
     };
-  }, []); // Empty dependency array ensures the effect runs only once
+  }, []); 
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
@@ -66,8 +61,6 @@ const Sidebar = () => {
         return <ChatWithLecturers userData={userData} />;
       case 'group_chats':
         return <GroupChats userData={userData} />;
-      case 'ai_chats':
-        return <Chatbot userData={userData} />;  
       default:
         return null;
     }

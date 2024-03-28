@@ -10,10 +10,8 @@ const RegisterPage = lazy(() => import('./Components/Register/RegisterPage'));
 const ForgotPasswordPage = lazy(() => import('./Components/ForgotPassword/ForgotPasswordPage'));
 const LoginPage = lazy(() => import('./Components/Login/Login'));
 const NotFound = lazy(() => import('./Components/NotFound/NotFound'));
-const OTPVerification = lazy(() => import('./Components/OTP/OTPVerification'));
-const SuccessPage = lazy(() => import('./Components/SuccessPage/SuccessPage'));
 const ChatWithLecturers = lazy(() => import('./Components/Dashboard/ChatWithLecturers'));
-const UploadDocument = lazy(() => import('./Components/Dashboard/groupChats'));
+const DocumentViewer = lazy(() => import('./Components/Dashboard/DocumentViewer'));
 const GroupChats = lazy(() => import('./Components/Dashboard/groupChats'));
 
 function App() {
@@ -25,17 +23,12 @@ function App() {
             <Routes>
               <Route path="/register" element={<RegisterPage />} />
               <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-              <Route path="/OTPVerification" element={<OTPVerification />} />
               <Route path="/not-found" element={<NotFound />} />
               <Route path="/" element={<LoginPage />} />
-              <Route path="/login" element={<LoginPage />} />
-              {/* <Route path='/MarkAttendance' element={<MarkAttendance />} /> */}
-              <Route path="/successPage" element={<SuccessPage />} />
-              {/* <Route path="/dashboard" element={<AppLayout />} /> */}
-              
+              <Route path="/login" element={<LoginPage />} />            
               <Route path="/dashboard/*" element={<AppLayout />}>
                 <Route path="chat_with_lecturer" element={<ChatWithLecturers />} />
-                <Route path="upload_document" element={<UploadDocument />} />
+                <Route path="upload_document" element={<DocumentViewer />} />
                 <Route path="group_chats" element={<GroupChats />} />
               </Route>
             </Routes>

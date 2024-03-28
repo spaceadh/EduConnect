@@ -4,14 +4,7 @@ import { getDatabase } from 'firebase/database';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCI6x7mYuB7JPaXaqgIhCLj3mNCzPElOXY",
-  authDomain: "kcauschoolproject.firebaseapp.com",
-  databaseURL: "https://kcauschoolproject-default-rtdb.firebaseio.com",
-  projectId: "kcauschoolproject",
-  storageBucket: "kcauschoolproject.appspot.com",
-  messagingSenderId: "312803926607",
-  appId: "1:312803926607:web:eca9db45f75dca2937803a",
-  measurementId: "G-JY32HRH8BX"
+ //Add your Configs from Firebase
 };
 
 // Initialize Firebase

@@ -56,3 +56,8 @@ Stay updated with the latest news, features, and announcements by following us o
 ### Thank You! 🙏
 
 Thank you for choosing Educonnect. Together, let's revolutionize education and make learning a delightful journey! 🎓✨,,,,,,,I am Alvin Wachira.
+
+
+### Bragging Rights
+
+I did it in exactly 8hrs 39 mins 🙂
