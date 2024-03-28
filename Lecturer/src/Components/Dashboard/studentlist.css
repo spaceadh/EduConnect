@@ -1,0 +1,36 @@
+.student-list {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .student-list h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .student-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .student-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-list li p {
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Hover effect */
+  .student-list li:hover {
+    background-color: #f0f0f0;
+  }
+  

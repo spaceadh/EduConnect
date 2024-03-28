@@ -1,0 +1,123 @@
+  /* Desktop view */
+  .desktop-chat-container {
+    position: relative;
+    height: 100%; /* Adjust the height as needed */
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the chat container */
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+  }
+  
+  /* Mobile view */
+  .mobile-chat-container {
+    width: 100%; /* Make the chat container full width on mobile */
+    height: 100%; /* Adjust the height as needed */
+    /* background-color: #f0f0f0;  */
+    /* border: 1px solid #ccc;  */
+    border-radius: 10px; /* Example border radius */
+  }
+  
+  .messages-wrapper {
+    padding: 10px 20px; /* Adjust padding */
+    margin-bottom: 50px; /* Reduce margin bottom */
+  }
+  
+  .chat-bubble {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #7cc5d9;
+    color: #1c2c4c;
+    max-width: 100px;
+    max-width: calc(100% - 50px); /* Adjust this value as needed */
+    box-shadow: -1px 1px 1px 1px #4c768d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    overflow: hidden; /* Hide overflow */
+    /* white-space: nowrap;  */
+    text-overflow: ellipsis; /* Use ellipsis to indicate text is clipped */
+   }
+   
+  
+  .chat-bubble.right {
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: -1px 1px 1px 1px #88dded; /* Adjust box shadow */
+  }
+  
+  .chat-bubble__right {
+    display: flex;
+    flex-direction: column; /* Add column direction */
+  }
+  
+  .user-name {
+    font-weight: bold;
+    margin-bottom: 2px; /* Reduce margin bottom */
+    font-size: 0.8rem; /* Reduce font size */
+    color: #1c2c4c;
+  }
+  
+  .user-message {
+   word-break: break-word;
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .message-time {
+    font-size: 0.7rem; /* Reduce font size */
+    margin-top: 2px; /* Adjust margin top */
+  }
+/* Chat component */
+.group-name-container {
+  background-color: #f0f0f0; /* Set background color */
+  padding: 10px; /* Set padding */
+  text-align: center; /* Center-align text */
+  border-bottom: 1px solid #ccc; /* Add bottom border */
+}
+
+.group-name-container p {
+  font-size: 1.2rem; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  margin: 0; /* Remove margin */
+}
+
+/* send message */
+.send-message {
+  position: fixed;
+  bottom: 0px;
+  width: 50%;
+  padding: 20px 30px;
+  /* background-color: #4c768d; */
+  display: flex;
+}
+.send-message > input {
+  height: 40px;
+  padding: 10px 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  flex-grow: 1;
+  background-color: white;
+  color: #1c2c4c;
+  font-size: 1rem;
+}
+.send-message > input:placeholder {
+  color: #ddd;
+}
+.send-message > :is(input, button):focus {
+  outline: none;
+  border-bottom: 5px solid #7cc5d9;
+  border-top: 5px solid #7cc5d9;
+  border-left: 5px solid #7cc5d9;
+  border-right: 5px solid #7cc5d9;
+}
+.send-message > button {
+  width: 70px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 0 5px 5px 0;
+  color: #242443;
+  border: 1px solid #7cc5d9;
+  background-color: #7cc5d9;
+  font-weight: 600;
+}

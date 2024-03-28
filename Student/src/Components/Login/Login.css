@@ -1,0 +1,74 @@
+/* styles.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin: 0;
+    background-color: #ffffff; /* Add a light background color */
+  }
+
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo-image {
+    width: 80px; /* Adjust the width of the logo as needed */
+    height: 80px; /* Adjust the height of the logo as needed */
+    margin-bottom: 20px; /* Add space between the logo and the login form */
+  }
+  
+  .forgot-password {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center; /* Adjust the font size as needed */
+  }
+  .login-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(255, 255, 0, 0.3), 0 0 10px rgba(255, 255, 0, 0.2); Yellowish tinge on the shadow outline */
+    padding: 20px;
+    width: 300px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    text-align: center;
+    color: #555;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Add curved outline for the input fields */
+    border: 1px solid #ddd; /* Add a border for better visibility */
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Add a smooth transition for the hover effect */
+  }
+  
+  button:hover {
+    background-color: #f0c419; /* Yellow hover effect on the button */
+  }
+  
+  p,h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: serif;
+    color: #555; /* Adjust the text color */
+  }
+  

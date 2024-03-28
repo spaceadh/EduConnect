@@ -1,0 +1,64 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.student-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.document-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.document-type {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.acceptance-status {
+  margin-top: 5px;
+}
+
+.document-url {
+  margin-top: 5px;
+  cursor: pointer;
+  color: blue;
+}
+
+.document-url:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.button-container button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container button.accept {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.button-container button.decline {
+  background-color: #d9534f;
+  color: white;
+}
+
+.button-container button.download {
+  background-color: #337ab7;
+  color: white;
+}
